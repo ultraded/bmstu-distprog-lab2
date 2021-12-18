@@ -1,6 +1,7 @@
 import org.apache.hadoop.io.WritableComparable;
 
 import java.io.DataOutput;
+import java.io.IOException;
 
 public class FlightsWritableComparable implements WritableComparable {
     private int aeroID, identity;
@@ -10,8 +11,11 @@ public class FlightsWritableComparable implements WritableComparable {
     }
 
     @Override
-    public void write(DataOutput dataOutput) throw IOException {
-        dataOutput.writeInt(aeroportID);
-        data
+    public void write(DataOutput dataOutput) throws IOException {
+        dataOutput.writeInt(aeroID);
+        dataOutput.writeInt(identity);
     }
+
+    @Override
+    public void compareTo()
 }
