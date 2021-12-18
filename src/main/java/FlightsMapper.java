@@ -15,7 +15,7 @@ public class FlightsMapper extends Mapper<LongWritable, Text, FlightsWritableCom
     }
 
     @Override
-    public void map(LongWritable key, Text value, Context context) throws IOException  {
+    public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException  {
         if (key.get() > 0) {
             String[] flights = value.toString().split(DELIMITER);
             int airportID = Integer.parseInt(flights[AIPORT_ID_INDEX]);
