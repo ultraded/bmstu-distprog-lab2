@@ -30,6 +30,7 @@ public class FlightsWritableComparable implements WritableComparable {
 
     @Override
     public void readFields(DataInput dataInput) throws IOException {
-        th
+        this.aeroID = dataInput.readInt();
+        this.identity = dataInput.readBoolean();
     }
 }

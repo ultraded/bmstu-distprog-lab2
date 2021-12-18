@@ -2,7 +2,7 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
-public class FlightMapper extends Mapper<LongWritable, Text > {
+public class FlightsMapper extends Mapper<LongWritable, Text > {
 
     private int ID;
     private float delay,
