@@ -8,7 +8,8 @@ public class FlightsWritableComparable implements WritableComparable {
     private boolean identity;
 
     public FlightsWritableComparable(int id, boolean identity) {
-
+        this.aeroID=id;
+        this.identity=identity;
     }
 
     @Override
@@ -18,5 +19,8 @@ public class FlightsWritableComparable implements WritableComparable {
     }
 
     @Override
-    public void compareTo()
+    public int compareTo(Object o) {
+        FlightsWritableComparable compared =(FlightsWritableComparable) o;
+        if (aeroID >)
+    }
 }
