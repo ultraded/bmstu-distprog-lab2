@@ -5,8 +5,7 @@ public class FlightsGroupingComparator extends WritableComparator {
 
     @Override
     public int compare(WritableComparable a,WritableComparable b) {
-        FlightsWritableComparable firstFlight = (FlightsWritableComparable) a;
-        FlightsWritableComparable secondFlight = (FlightsWritableComparable) b;
-        return firstFlight.compareID(secondFlight);
+        FlightsWritableComparable flightA = (FlightsWritableComparable) a, flightB = (FlightsWritableComparable) b;
+        return FlightsWritableComparable.compare(flightA, flightB);
     }
 }
