@@ -13,6 +13,10 @@ public class FlightsWritableComparable implements WritableComparable {
         this.identity=identity;
     }
 
+    public static int compare(FlightsWritableComparable a, FlightsWritableComparable b) {
+        return  Integer.compare(a.aeroID, b.aeroID);
+    }
+
     public int getID() { return aeroID; };
 
     @Override
