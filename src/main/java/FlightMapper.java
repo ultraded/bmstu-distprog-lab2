@@ -4,6 +4,6 @@ import org.apache.hadoop.mapreduce.Mapper;
 
 public class FlightMapper extends Mapper<LongWritable, Text > {
 
-    private int AID;
+    private int ID;
     private float delay,
 }
