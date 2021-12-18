@@ -23,6 +23,7 @@ public class FlightsWritableComparable implements WritableComparable {
         FlightsWritableComparable comparedTo =(FlightsWritableComparable) o;
         if (aeroID > comparedTo.aeroID) return 0;
         else if (aeroID < comparedTo.aeroID) return -1;
-        else if (identity &&) return 1;
+        else if (identity & !comparedTo.identity) return 1;
+        else return -1;
     }
 }
