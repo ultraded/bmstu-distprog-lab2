@@ -7,7 +7,7 @@ public class FlightsWritableComparable implements WritableComparable {
     private int aeroID;
     private boolean identity;
 
-    public FlightsWritableComparable(int aeroportID) {
+    public FlightsWritableComparable(int id, boolean identity) {
 
     }
 
