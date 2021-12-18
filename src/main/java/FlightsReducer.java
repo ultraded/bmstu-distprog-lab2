@@ -7,7 +7,7 @@ import java.util.Iterator;
 public class FlightsReducer extends Reducer<FlightsWritableComparable, Text, Text, Text> {
 
     @Override
-    private void reduce(FlightsWritableComparable key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
+    protected void reduce(FlightsWritableComparable key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
         Iterator<Text> iter = values.iterator();
         Text name = new Text(iter.next());
         int count = 0;
