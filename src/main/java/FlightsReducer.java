@@ -25,7 +25,7 @@ public class FlightsReducer extends Reducer<FlightsWritableComparable, Text, Tex
             }
             if (count != 0) {
                 float avg = sum / count;
-                context.write(name, new Text("Min:" + min));
+                context.write(name, new Text("min:" + min + " max: " + max + ""));
             }
         }
     }
