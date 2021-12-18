@@ -1,6 +1,6 @@
 import org.apache.hadoop.io.Writable;
 
-public class FlightWritable implements Writable {
+public class FlightWritableComparable implements Writable {
 
     @Override
     public void write
