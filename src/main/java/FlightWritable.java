@@ -8,7 +8,7 @@ public class FlightWritableComparable implements Writable {
 
 
 
-    
+
     @Override
     public void write(DataOutput dataOutput) throw IOException {
 
