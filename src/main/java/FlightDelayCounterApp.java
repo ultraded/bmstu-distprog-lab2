@@ -26,7 +26,8 @@ public class FlightDelayCounterApp {
         job.setReducerClass(FlightsReducer.class);
         job.setMapOutputKeyClass(FlightsWritableComparable.class);
         job.setMapOutputValueClass(Text.class);
-        job.setNumReduceTasks();
+        job.setNumReduceTasks(NUM_REDUCE_TASKS);
+        System.exit(job.waitForCompletion(true) ? 0 : 1);
 
     }
 }
