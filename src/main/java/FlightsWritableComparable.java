@@ -4,7 +4,8 @@ import java.io.DataOutput;
 import java.io.IOException;
 
 public class FlightsWritableComparable implements WritableComparable {
-    private int aeroID, identity;
+    private int aeroID;
+    private boolean identity;
 
     public FlightsWritableComparable(int aeroportID) {
 
@@ -13,7 +14,7 @@ public class FlightsWritableComparable implements WritableComparable {
     @Override
     public void write(DataOutput dataOutput) throws IOException {
         dataOutput.writeInt(aeroID);
-        dataOutput.writeInt(identity);
+        dataOutput.writeBoolean(identity);
     }
 
     @Override
