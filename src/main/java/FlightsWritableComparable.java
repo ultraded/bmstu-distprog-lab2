@@ -13,7 +13,7 @@ public class FlightsWritableComparable implements WritableComparable {
         this.identity=identity;
     }
 
-    public int getID() { return aeroID; }''
+    public int getID() { return aeroID; };
 
     @Override
     public void write(DataOutput dataOutput) throws IOException {
