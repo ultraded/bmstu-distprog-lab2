@@ -12,7 +12,7 @@ public class FlightsNameMapper extends Mapper<LongWritable, Text, FlightsWritabl
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         if (key.get() > 0) {
             String[] table = value.toString().split(DELIMINTER);
-            int dest
+            int destinationID = Integer.parseInt(table[AIRPORT_ID_INDEX].replaceAll("\"", ""))
         }
     }
 
