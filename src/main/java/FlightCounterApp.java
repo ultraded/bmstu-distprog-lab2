@@ -1,3 +1,5 @@
+import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.mapred.FileInputFormat;
 import org.apache.hadoop.mapreduce.Job;
 
 public class FlightCounterApp {
@@ -6,6 +8,8 @@ public class FlightCounterApp {
             System.err.println("Usage:");
             System.exit(-1);
         }
-        Job job =
+        Job job = Job.getInstance();
+        job.setJarByClass(FlightCounterApp.class);
+        FileInputFormat.addInputPath(job, new Path(args[0]));
     }
 }
