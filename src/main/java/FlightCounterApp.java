@@ -12,5 +12,6 @@ public class FlightCounterApp {
         job.setJarByClass(FlightCounterApp.class);
         job.setJobName("Flight count");
         FileInputFormat.addInputPath(job, new Path(args[0]));
+        
     }
 }
