@@ -8,7 +8,7 @@ public class FlightsNameMapper extends Mapper<LongWritable, Text, FlightsWritabl
 
     @Override
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
-        
+        if
     }
 
 }
