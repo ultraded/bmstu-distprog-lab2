@@ -6,6 +6,6 @@ public class FlightCounterApp {
             System.err.println("Usage:");
             System.exit(-1);
         }
-        Job job = setJarByC
+        Job job = 
     }
 }
