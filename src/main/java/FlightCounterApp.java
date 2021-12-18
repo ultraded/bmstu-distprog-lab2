@@ -10,6 +10,7 @@ public class FlightCounterApp {
         }
         Job job = Job.getInstance();
         job.setJarByClass(FlightCounterApp.class);
+        job.setJobName("");
         FileInputFormat.addInputPath(job, new Path(args[0]));
     }
 }
