@@ -1,0 +1,7 @@
+FlightsGroupingComparator.class
+FlightsWritableComparable.class
+AirportsMapper.class
+FlightsMapper.class
+FlightsPartitioner.class
+FlightDelayCounterApp.class
+FlightsReducer.class
